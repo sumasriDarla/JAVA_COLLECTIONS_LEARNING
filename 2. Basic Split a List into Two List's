@@ -1,0 +1,36 @@
+
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int sum = 0;
+        int avg;
+        int indexstart;
+        int indexend;
+        List<Integer> l = new ArrayList<>(10);
+        List<Integer> la = new ArrayList<>(10);
+        l.add(2);
+        l.add(3);
+        l.add(4);
+        l.add(1);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the start index of List");
+        indexstart = sc.nextInt();
+        System.out.println("Enter the start index of List");
+        indexend = sc.nextInt();
+        try {
+            for (int i = indexstart; i < indexend; i++) {
+                la.add(l.get(i));
+                l.remove(i);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(la);
+        System.out.println(l);
+    }
+}
+
+
