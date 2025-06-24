@@ -1,0 +1,30 @@
+
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        List<Integer> l = new ArrayList<>(10);
+        l.add(4);
+        l.add(2);
+        l.add(3);
+        l.add(1);
+        l.add(8);
+        for(int i=0;i<l.size();i++){
+           if(l.get(i)>max){
+               max=l.get(i);
+           }
+           else if(l.get(i)<min){
+               min=l.get(i);
+           }
+        }
+        System.out.println(max);
+        System.out.println(min);
+        }
+    }
+
+
+
